@@ -110,9 +110,13 @@ This will send an email with the latest audit report to the recipients specified
 
 Contributions to the `auto_audit` project are welcome! If you find a bug or have a suggestion for a new feature, please submit an issue or pull request on the GitHub repository.
 
-## Developer @abtzpro @AdamR @HelloSecurity
+## Developer 
 
-## Special-Thanks chatGPT for the awesome and informative debugging capabilities, notation capabilities, and README.md file creation
+@abtzpro @AdamR @HelloSecurity
+
+## Extra Credit To
+
+chatGPT for the awesome and informative debugging capabilities, notation capabilities, and README.md file creation
 
 ## License
 
