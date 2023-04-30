@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Audit Report</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-4 mb-4">Security Audit Report</h1>
+
+    <h2 class="mb-3">Vulnerability Assessment</h2>
+    {% for vulnerability in report.vulnerabilities %}
+        <h3>{{ vulnerability.target }}</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Vulnerability</th>
+                    <th>Severity</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for vuln in vulnerability.vulnerabilities %}
+                    <tr>
+                        <td>{{ vuln.name }}</td>
+                        <td>{{ vuln.risk_category }}</td>
+                        <td>{{ vuln.description }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endfor %}
+
+    <h2 class="mb-3">Compliance Audit</h2>
+    {% for compliance_result in report.compliance_results %}
+        <h3>{{ compliance_result.target }}</h3>
+        <pre>{{ compliance_result.result }}</pre>
+    {% endfor %}
+</div>
+</body>
+</html>
 
