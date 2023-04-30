@@ -1,5 +1,3 @@
-Sure, here is an informative and extensive README file for the `auto_audit` project:
-
 # AutoAudit
 
 AutoAudit is an automated security audit tool designed for SMB and enterprise organizations. It is built with Python and incorporates popular security tools such as Nmap, OpenVAS, and ZAP to perform vulnerability assessments, risk assessments, and compliance audits. AutoAudit generates comprehensive HTML reports and can be scheduled to run at regular intervals. The tool can also send email notifications with the latest audit reports.
@@ -113,6 +111,8 @@ This will send an email with the latest audit report to the recipients specified
 Contributions to the `auto_audit` project are welcome! If you find a bug or have a suggestion for a new feature, please submit an issue or pull request on the GitHub repository.
 
 ## Developer @abtzpro @AdamR @HelloSecurity
+
+## Special-Thanks chatGPT for the awesome and informative debugging capabilities, notation capabilities, and README.md file creation
 
 ## License
 
