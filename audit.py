@@ -1,5 +1,7 @@
 # ... import statements ...
 
+from jinja2 import Environment, FileSystemLoader
+
 class Audit:
     def __init__(self, config):
         self.config = config
