@@ -1,24 +1,28 @@
 {
-  "openvas": {
-    "host": "127.0.0.1",
-    "port": 9390,
-    "username": "your_openvas_username",
-    "password": "your_openvas_password"
-  },
-  "zap": {
-    "api_key": "your_zap_api_key",
-    "host": "http://127.0.0.1",
-    "port": "8080"
-  },
-  "email": {
-    "username": "your_email_username",
-    "password": "your_email_password",
-    "server": "your_email_server",
-    "port": 465,
-    "recipients": ["recipient@example.com"]
-  },
-  "targets": ["192.168.1.0/24"],
-  "webapp_targets": ["http://example.com"],
-  "nmap_ports": "1-65535",
-  "audit_schedule": "00:00"
+    "targets": ["192.168.1.0/24"],
+    "webapp_targets": ["http://example.com"],
+    "nmap_ports": "1-65535",
+    "openvas_host": "127.0.0.1",
+    "openvas_port": 9390,
+    "openvas_username": "your_openvas_username",
+    "openvas_password": "your_openvas_password",
+    "zap_api_key": "your_zap_api_key",
+    "zap_host": "http://127.0.0.1",
+    "zap_port": "8080",
+    "report_dir": "reports",
+    "template": "report.html",
+    "email": {
+        "server": "your_email_server",
+        "port": 587,
+        "username": "your_email_username",
+        "password": "your_email_password",
+        "recipients": ["recipient1@example.com", "recipient2@example.com"],
+        "subject": "AutoAudit Report",
+        "body": "Please find attached the latest AutoAudit report."
+    },
+    "schedule": {
+        "interval": 60,
+        "unit": "minutes",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    }
 }
