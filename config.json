@@ -1,0 +1,24 @@
+{
+  "openvas": {
+    "host": "127.0.0.1",
+    "port": 9390,
+    "username": "your_openvas_username",
+    "password": "your_openvas_password"
+  },
+  "zap": {
+    "api_key": "your_zap_api_key",
+    "host": "http://127.0.0.1",
+    "port": "8080"
+  },
+  "email": {
+    "username": "your_email_username",
+    "password": "your_email_password",
+    "server": "your_email_server",
+    "port": 465,
+    "recipients": ["recipient@example.com"]
+  },
+  "targets": ["192.168.1.0/24"],
+  "webapp_targets": ["http://example.com"],
+  "nmap_ports": "1-65535",
+  "audit_schedule": "00:00"
+}
