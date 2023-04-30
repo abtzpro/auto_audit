@@ -1,1 +1,6 @@
+nmap==0.6.1
+openvas-lib==1.1.6
+python-owasp-zap-v2.4==0.0.19
+Jinja2==3.1.0
+schedule==1.1.0
 
