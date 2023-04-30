@@ -1,4 +1,3 @@
-# AutoAudit
 # AutoAudit: Automated Enterprise Security Audit Tool
 
 AutoAudit is an automated security audit tool designed to streamline the process of conducting security audits for SMBs and Enterprise organizations. The tool integrates multiple open-source tools to perform vulnerability assessments, risk assessments, and compliance audits.
